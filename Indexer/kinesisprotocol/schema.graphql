@@ -1,0 +1,21 @@
+type KinesisProtocol_UserDeposited {
+  id: ID!
+  user: String!
+  assets: BigInt!
+  shares: BigInt!
+}
+
+type KinesisProtocol_UserWithdrawn {
+  id: ID!
+  user: String!
+  assets: BigInt!
+  shares: BigInt!
+}
+
+type KinesisProtocol_WithdrawBridgeAndSupplied {
+  id: ID!
+  receiver: String!
+  gasFeesAmount: BigInt!
+  destinationChainSelector: BigInt!
+}
+
